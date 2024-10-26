@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard By Jen</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <h2>Admin Dashboard</h2>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#weekly-summary">Weekly Summary</a></li>
+        <li><a href="#monthly-summary">Monthly Summary</a></li>
+      </ul>
+    </aside>
+    <main class="main-content">
+      <header>
+        <h1>Welcome to SYUSYU Dashboard!</h1>
+      </header>
+      <section id="profile" class="profile-section">
+        <h2>Profile</h2>
+        <div class="profile-card">
+          <div class="profile-image">
+            <img src="jenyepposo.jpg" alt="Profile Photo">
+            <button class="edit-photo-btn">Edit Photo</button>
+          </div>
+          <div class="profile-info">
+            <h3>Jeanne Carolline</h3>
+            <p>Email: jeanneCarolline003@gmail.com</p>
+            <p>Role: Administrator</p>
+            <button class="edit-profile-btn">Edit Profile</button>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Weekly Summary Cards Section -->
+      <section id="weekly-summary" class="summary-section">
+        <h2>Weekly Summary</h2>
+        <div class="summary-cards">
+          <div class="card">
+            <h3>Weekly Sales</h3>
+            <p>$25,000</p>
+          </div>
+          <div class="card">
+            <h3>Weekly Visitors</h3>
+            <p>3,500</p>
+          </div>
+          <div class="card">
+            <h3>Weekly Growth</h3>
+            <p><span class="increase">+2.5%</span></p>
+          </div>
+          <div class="card">
+            <h3>Weekly Revenue</h3>
+            <p>$5,000</p>
+          </div>
+        </div>
+        <canvas id="weeklyChart" width="400" height="200"></canvas>
+      </section>
+
+      <!-- Monthly Summary Cards Section -->
+      <section id="monthly-summary" class="summary-section">
+        <h2>Monthly Summary</h2>
+        <div class="summary-cards">
+          <div class="card">
+            <h3>Total Sales</h3>
+            <p>$120,000</p>
+          </div>
+          <div class="card">
+            <h3>Visitor Count</h3>
+            <p>15,000</p>
+          </div>
+          <div class="card">
+            <h3>Growth Rate</h3>
+            <p><span class="increase">+8.5%</span></p>
+          </div>
+          <div class="card">
+            <h3>Monthly Revenue</h3>
+            <p>$10,000</p>
+          </div>
+        </div>
+        <canvas id="monthlyChart" width="400" height="200"></canvas>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
